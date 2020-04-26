@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <!-- Bootstrap core CSS -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">-->
-    <link href="/css/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css.css?family=Playfair+Display:700,900" rel="stylesheet">-->
+    <link href="/css/css.css?family=Playfair+Display:700,900" rel="stylesheet">
     <!--<link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/site.css?v=1">
@@ -14,6 +14,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>AVCS</title>
   </head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSHQ672HDB"></script>
+  <script>
+    function are_cookies_enabled() {
+      var cookieEnabled = (navigator.cookieEnabled)
+        ? true
+        : false;
+
+      if (typeof navigator.cookieEnabled == "undefined" && !cookieEnabled) {
+        document.cookie = "testcookie";
+        cookieEnabled = (document.cookie.indexOf("testcookie") != -1)
+          ? true
+          : false;
+      }
+      return (cookieEnabled);
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TSHQ672HDB');
+  </script>
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
@@ -99,7 +125,9 @@ background-size: cover;*/
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<div class="container" style="min-height:540px; background-image:url(/img/white-lines-cool.png)">
+<!--<div class="container" style="min-height:540px; background-image:url(/img/white-lines-cool.png)">-->
+<div class="container" style="min-height:540px">
+
 
     <div class="container-fluid" >
   <h1 style="text-align:center;">DevOps is the core of our Solutions </h1>
