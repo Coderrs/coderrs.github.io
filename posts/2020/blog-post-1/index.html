@@ -40,11 +40,11 @@
 
     gtag('config', 'G-TSHQ672HDB');
   </script>
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
   <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>-->
-  <script src="/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="/js/jquery-3.3.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
   <script src="/js/holder.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
@@ -137,41 +137,68 @@ background-size: cover;*/
 
             <ul class="td-sidebar-nav__section pr-md-3">
               <li class="td-sidebar-nav__section-title">
-                <a href="/blog/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Blog</a>
+                <a href="/posts/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">All Blogs</a>
               </li>
               <ul>
                 <li class="collapse show" id="blog">
                   <ul class="td-sidebar-nav__section pr-md-3">
                     <li class="td-sidebar-nav__section-title">
-                      <a href="/blog/releases/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Releases</a>
+                      <a href="" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Makefile enhances flavour of tox</a>
                     </li>
                     <ul>
-                      <li class="collapse show" id="blogreleases">
+                      <!--<li class="collapse show" id="blogreleases">
                         <a class="td-sidebar-link td-sidebar-link__page " id="m-blog20200229-v100-release" href="/blog">All Blogs</a>
-                      </li>
+                      </li>-->
                     </ul>
-                </ul>
-              </li>
-            </ul>
-        </ul>
-      </nav>
+                    </ul>
+                  </li>
+              </ul>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
   <!--blog-right-->
   <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
     <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-Blog-right section
+    <!-- User Details and Profile-->
+      <img class="card-img-right flex-auto d-none d-lg-block" src="holder.js/160x170?theme=AVCS" data-holder-rendered="true" style="padding: 10px; width: 160px; height: 160px; border-radius: 810%;" alt="Avatar">
+&nbsp;&nbsp;&nbsp;&nbsp;K. K. <br>
+I am an Automation Engineer, who is drowned in Laziness. So you can expect that I like to automate steps in a fashion, so that I do not need to do anything manually. Professionally I have worked with 3 of the Big 4 Banks and I provide Consulting services in DevOps and Automation. I am Community Driven and a Big time Googler.
 </div>
   </div>
   <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
     <div class="row">
       <div class="col-12">
-        <h2>Posts in 2020</h2>
+        <h2>Makefile enhances flavour of tox</h2>
+        <h6>
+          <time datetime="2020-05-30T00:00:00.000Z">May 29, 2020</time>
+        </h6>
         <ul class="list-unstyled mt-4">
           <li class="media mb-4">
             <div class="media-body">
 
-              <p>This is the first post on my blog.</p>
+              <p>This is part 1 of the series where we will discuss on initials of make file and how this can enhance the taste buds of automation to tox.</p>
+<p>Makefile or make has eased life of developers in the past and is still commonly used in various spaces.
+This blog relates the usage of make with a tox infrastructure test run.</p>
+<p>As this is for the community and if you are interested in just the code ,go ahead.</p>
+<script src="https://gist.github.com/sharadvatsa/eff3d9c00f79e42f1a7ae7ddb1f58bb9.js"></script>
+<p>What does that means ?</p>
+<p><code>make clean</code> # will clean the directory</p>
+<h2>Let us look at the code line by line</h2>
+<p>line 7 : phony here is to ensure explicit calls to build clean run git, this is not an order of execution
+for indepth understanding Refer :: https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html</p>
+<p>line 9 : this is assignment of a string &quot;0.0.1&quot; to a variable</p>
+<p>line 11 : this appends $(VERSION) with ./dist/prod-build- thus variable &quot;TARGET_FILEPATH&quot; =  /dist/prod-build-0.0.1
+line 12 : this will make TARGET_ZIPFILEPATH = /dist/prod-build-0.0.1.tar.gz</p>
+<p>line 14, 17, 21, 24, 28 : all represents a call similar to a goto statement</p>
+<h2>Lets see the code calls and respective outputs</h2>
+<p><code>make clean build</code> # will clean the directory , then do a git clone (line 22), execute a python sdist (line 26)</p>
+<p><code>make clean build run</code> # will do &quot;make clean build&quot; in sequence and thereafter will perform clean (line 15) and then run with tox parameter (line 19)</p>
+<blockquote>
+<blockquote>
+<p>Still working on Next Part</p>
+</blockquote>
+</blockquote>
 
 
             </div>

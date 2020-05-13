@@ -40,11 +40,11 @@
 
     gtag('config', 'G-TSHQ672HDB');
   </script>
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/holder.min.js"></script>
   <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
   <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>-->
-  <script src="/js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="/js/jquery-3.3.1.slim.min.js" integrity="" crossorigin="anonymous"></script>
   <script src="/js/holder.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
@@ -137,42 +137,78 @@ background-size: cover;*/
 
             <ul class="td-sidebar-nav__section pr-md-3">
               <li class="td-sidebar-nav__section-title">
-                <a href="/blog/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Blog</a>
+                <a href="/posts/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">All Blogs</a>
               </li>
               <ul>
                 <li class="collapse show" id="blog">
                   <ul class="td-sidebar-nav__section pr-md-3">
                     <li class="td-sidebar-nav__section-title">
-                      <a href="/blog/releases/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Releases</a>
+                      <a href="" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Kubernetes Journey – Upskilling your team</a>
                     </li>
                     <ul>
-                      <li class="collapse show" id="blogreleases">
+                      <!--<li class="collapse show" id="blogreleases">
                         <a class="td-sidebar-link td-sidebar-link__page " id="m-blog20200229-v100-release" href="/blog">All Blogs</a>
-                      </li>
+                      </li>-->
                     </ul>
-                </ul>
-              </li>
-            </ul>
-        </ul>
-      </nav>
+                    </ul>
+                  </li>
+              </ul>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
   <!--blog-right-->
   <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
     <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-Blog-right section
+    <!-- User Details and Profile-->
+      <img class="card-img-right flex-auto d-none d-lg-block" src="https://media-exp1.licdn.com/dms/image/C5603AQEKNE0jmM5O1g/profile-displayphoto-shrink_200_200/0?e=1594857600&amp;v=beta&amp;t=sffu6SZWhzhQpaOfUX_zE-01Rv3PsaEy7xIrQOUrE-U" data-holder-rendered="true" style="padding: 10px; width: 160px; height: 160px; border-radius: 810%;" alt="Avatar">
+&nbsp;&nbsp;&nbsp;&nbsp;Brad Mccoy <br>
+I am an engineering manager , currently managing the Cloud Innovation Team in modern DevOps environment, where we are working with AWS and Azure and currently going through Kubernetes Journey.
 </div>
   </div>
   <main class="col-12 col-md-9 col-xl-8 pl-md-5 pr-md-4" role="main">
     <div class="row">
       <div class="col-12">
-        <h2>Posts in 2020</h2>
+        <h2>Kubernetes Journey – Upskilling your team</h2>
+        <h6>
+          <time datetime="2020-07-01T00:00:00.000Z">June 30, 2020</time>
+        </h6>
         <ul class="list-unstyled mt-4">
           <li class="media mb-4">
             <div class="media-body">
 
-              <p>Well Third is the</p>
-<h1>Performance</h1>
+              <p>I’m the Engineering Manager for the Cloud Innovation team at Temenos where I manage 7 senior DevOps engineers.  As our company is getting into more cloud providers, we decided to get into Kubernetes so that we can run our solutions across all clouds and save money in costs. We decided that rather than going to market we would train everyone internally to upskill employees, give them job satisfaction and retain them.  This initiative turned out to be more successful than I thought and therefore I would like to share my journey for other managers and tech leads wanting to start.</p>
+<p>The overall plan was to get everyone through the Certified Kubernetes Administrator (CKA) We first set out to do the Introduction to Kubernetes first, as this was the prerequisite for the Kubernetes certification, and a great starter to get into study mode.  After my team was skilled up we would then go and teach other teams what we had learnt.</p>
+<p>After we finished the Introduction to Kubernetes course, we found that Kubernetes wasn’t as scary as we thought, and we started using it straight away for our Internal DevOps toolset.  We had our Jenkins server sitting inside AWS ECS, running Docker slaves so we decided to put that setup into Kubernetes as a nice fun project to start off with.</p>
+<p>Already we found that we were reducing “new tech debt” as we were developing solutions that we wouldn’t have to go back and change in two month’s time and employees could increase code throughput and get more projects to market faster, with increased employee satisfaction.</p>
+<p><strong>Here are some tips to make your Kubernetes upskilling journey successful:</strong></p>
+<ol>
+<li>Have Weekly one on ones with your team.</li>
+<li>Complete the journey as a team.</li>
+<li>Lead by example.</li>
+<li>Get Executive buy in.</li>
+<li>Get your company to pay for the training.</li>
+<li>Reach out to the DevOps community for help.</li>
+<li>Setup weekly Discussion sessions.</li>
+<li>Get a real Kubernetes project to work on.</li>
+</ol>
+<p><strong>Have Weekly one on ones with your team.</strong>
+A Weekly one on one is the most powerful tool you can invest in for this journey and it only costs 30 minutes of your time, with each direct per week.  We follow a manager framework called manager tools that has a lot of great podcasts on how to provide effective one on ones. Each week I would set a milestone for the engineer to achieve by for the next week and then follow up on it for the next one on one and give positive feedback.  I found that with two of the Engineers I needed to set smaller milestones for them to achieve otherwise they would context switch and not meet the deadline of the training.</p>
+<p><strong>Complete the journey as a team</strong>
+It is important that the journey is done as a team, I found that half the team were able to finish the first course fast and the rest of the team was a lot slower.  The first people to finish were the tech leads and Senior engineers, so as we waited for the rest of the engineers to finish, I focused on upskilling the ones that finished on their soft skills particularly on coaching and mentoring, and then they helped coach the others to get them over the line. This was more successful than I thought it would be, and it completely changed the team in collaboration and performance.</p>
+<p><strong>Lead by example</strong>
+It is important that you lead by example and also do the training yourself.  Pushing yourself to complete the training milestones first will help push the others to focus finishing, this helped a lot to initially get everyone started.</p>
+<p><strong>Executive buy in</strong>
+An important part to the success of this journey is to get executive buy in. Changing the company culture can be hard so it’s important to do your research and present as to why you want to use Kubernetes.  After you start the journey it’s all about making the work visible.  Executives like reports, so it’s important from the start to show savings in costs and employee satisfaction.  This will help you in our next step to train other teams and really roll out Kubernetes.</p>
+<p><strong>Pay for the training</strong>
+One other key thing to do is to get approval to pay for the training, at the start of the training I hadn’t yet asked for the funding and I soon realized without this not everyone was going to pay out of their own pocket, and if there were some people that didn’t want to pay then we wouldn’t achieve our goal as finishing as a team.</p>
+<p>A lot of companies won’t pay for contractors so if they are not willing to pay for the course themselves you have to bring it up as performance in there one on ones, generally this won’t be a problem for contractors as they make a lot of money.</p>
+<p><strong>Reach out to the DevOps community for help</strong>
+The great thing about being in DevOps is the community.  As I started reaching out to my network regarding my journey everyone was excited to help, from our partners helping with training sessions, and advocates that I have met in conferences connecting me to the right people for advice.  One of them actually inspired me to write this blog!</p>
+<p><strong>Get a real Kubernetes project to work on</strong>
+This is very important as you need a real-life example as you can only do so much theory and labs.  This will give true training as it's important to have a</p>
+<p>In summary, this journey was not as hard as I thought it would be, and really doing it as a team brought us closer together and made our team culture even better than what it was. We are now excited to go out and teach other teams</p>
+<p><a href="https://www.linkedin.com/in/bradmccoy3">Brad Mccoy</a></p>
 
 
             </div>
